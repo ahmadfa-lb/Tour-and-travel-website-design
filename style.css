@@ -86,7 +86,13 @@ header .search-bar-container{
     display: flex;
     align-items: center;
     z-index: 10001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
+
+header .search-bar-container.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
 
 header .search-bar-container #search-bar{
     width: 100%;
@@ -95,4 +101,15 @@ header .search-bar-container #search-bar{
     color: #333;
     font-size: 1.7rem;
     border-radius: .5rem;
+}
+
+header .search-bar-container label{
+    color: var(--white);
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover{
+    color: var(--orange);
 }
