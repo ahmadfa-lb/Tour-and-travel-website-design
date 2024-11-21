@@ -349,6 +349,65 @@ login-form-container form h3 {
   color: #666;
 }
 
+.packages .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.packages .box-container .box{
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem rgba(0, 0, 0, .1);
+}
+
+.packages .box-container img{
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.packages .box-container .content{
+  padding: 2rem;
+
+}
+
+.packages .box-container .content h3{
+  font-size: 2rem;
+  color: #333;
+  
+}
+
+.packages .box-container .content h3 i{
+  color: var(--orange);
+}
+
+.packages .box-container .content p{
+  font-size: 1.7rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.packages .box-container .content .stars i{
+  font-size: 1.7rem;
+  color: var(--orange);
+}
+
+.packages .box-container .content .price{
+  font-size: 2rem;
+  color: #333;
+  padding-top: 1rem;
+}
+
+.packages .box-container .content .price span{
+  color: #666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+
+
 /* book section end */
 
 
